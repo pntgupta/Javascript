@@ -1,0 +1,40 @@
+
+.container .outer
+{
+	width: 250px;
+    margin: auto;
+    background-color: #FFEAA3;
+    padding: 30px;
+    border-radius: 15px;
+}
+.container .outer .inner div
+{
+	border: 1px solid black;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	background-color: #F2D679;
+}
+.container .outer .inner
+{
+	width: 180px;
+	margin: 0px auto;
+}
+.container .outer p
+{
+	width: 237px;
+	font-size: 21px;
+	margin: 20px auto 50px auto;
+}
+#count_display
+{
+	margin-right: 30px;
+}
+.container .outer .inner div.green
+{
+	background-color: green;
+}
+.container .outer .inner div.red
+{
+	background-color: red;
+}

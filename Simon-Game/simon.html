@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="simon.css">
+	<script type="text/javascript" src="simon.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="outer_circle">
+		<div class="inner">
+			<div class="inner_button green" onclick="play(event)" data-value=0></div>
+			<div class="inner_button red" onclick="play(event)" data-value=1></div>
+			<div class="inner_button yellow" onclick="play(event)" data-value=2></div>
+			<div class="inner_button blue" onclick="play(event)" data-value=3></div>
+		</div>
+		<div class="inner_circle">
+			<p>Simon</p>
+			<div class="count_outer">
+				<div class="count">--</div>
+				<span>COUNT</span>
+			</div>
+			<div class="start_outer">
+				<div class="btn start" onclick="start()"></div>
+				<span>START</span>
+			</div>
+			<div class="strict_outer">
+				<div class="strict_led"></div>
+				<div class="btn strict" onclick="strict()"></div>
+				<span>STRICT</span>
+			</div>
+			<div class="on_off">
+				<span>OFF</span>
+				<div class="on_off_outer_btn" onclick="on_off()">
+					<div class="on_off_inner_btn"></div>
+				</div>
+				<span>ON</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

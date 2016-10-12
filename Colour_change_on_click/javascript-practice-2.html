@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function abc() {
+			var x = document.getElementById("aa");
+			if(x.className == "cc") 
+				x.className="bb";
+			else 
+				x.className="cc";
+		}
+	</script>
+
+	<style type="text/css">
+	.bb{
+		background-color: lightblue;
+		color: black;
+	}
+	.cc{
+		background-color: grey;
+		color: purple;
+	}
+	</style>
+
+	<title></title>
+</head>
+<body>
+	<div id="aa" class="bb">
+		<h1>Hello</h1>
+		<input type="button" onclick="abc()" value="Click"></input>
+	</div>
+</body>
+</html>

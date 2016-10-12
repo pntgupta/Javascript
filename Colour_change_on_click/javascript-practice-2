@@ -1,0 +1,30 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var function abc() {
+			var x = document.getElementById("aa");
+			if(x.id == "bb") x.id="aa";
+			else x.id="bb";
+		}
+		
+	</script>
+	<style type="text/css">
+	#aa{
+		background-color: lightblue;
+		color: black;
+	}
+	#bb{
+		background-color: grey;
+		color: purple;
+	}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id="aa">
+	<h1>Hello</h1>
+	<input type="button" onclick="abc()" value="Click"></input>
+	</div>
+</body>
+</html>

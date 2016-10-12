@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		function create_grid()
+		{	debugger;
+			var x = document.getElementById("grid");
+		for(var i=0;i<16;i++)
+		{
+			x.innerHTML += "<div class='box' value=" +i+">"; //Automatically take closing </div>
+		}
+	}
+	</script>
+
+	<style type="text/css">
+	.box
+	{
+		height: 40px;
+		width: 40px;
+		border: 1px solid black;
+		display: inline-block;
+	}
+	#grid
+	{
+		width: 170px;
+	}
+	</style>
+
+	<title></title>
+</head>
+<body onload="create_grid()">
+	<div id="grid">
+		<p>aaaa</p>
+	</div>
+</body>
+</html>

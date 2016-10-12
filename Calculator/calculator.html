@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="calculator.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-3">
+			<div id="calc_box">
+				<div class="row">
+				<p>Calculator</p>
+				</div>
+				<div class="row" id="screen"><p class="screen_text">0</p></div>
+				<div class="row">
+					<table>
+						<tr>
+							<td>
+								<input type="button" class="red" value="AC" onclick="AC()"></input>
+							</td>
+							<td>
+								<input type="button" class="red" value="CE" onclick="CE()"></input>
+							</td>
+							<td>
+								<input type="button" value="%" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="/" onclick="calculate(value)"></input>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="button" value="7" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="8" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="9" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="*" onclick="calculate(value)"></input>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="button" value="4" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="5" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="6" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="-" onclick="calculate(value)"></input>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="button" value="1" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="2" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="3" onclick="calculate(value)"></input>
+							</td>
+							<td rowspan="2">
+								<input type="button" value="+" onclick="calculate(value)" style="height: 100%"></input>
+							</td>
+
+							<tr>
+							<td>
+								<input type="button" value="0" onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="." onclick="calculate(value)"></input>
+							</td>
+							<td>
+								<input type="button" value="=" onclick="equal()"></input>
+							</td>
+						</tr>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
